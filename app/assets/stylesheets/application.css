@@ -1,0 +1,50 @@
+.iron{
+  background-color: #990000;
+  color: yellow;
+  border: dotted yellow;
+}
+.bat{
+  background-color: black;
+  color: yellow;
+}
+.widow{
+  background-color: black;
+  color: purple;
+}
+#progressbar {
+  background-color: purple;
+  border-radius: 13px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar > div {
+   background-color: black;
+   width: 80%; /* Adjust with JavaScript */
+   height: 20px;
+   border-radius: 10px;
+}
+#progressbar3 {
+  background-color: gold;
+  border-radius: 13px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar3 > div {
+   background-color: #990000;
+   width: 100%; /* Adjust with JavaScript */
+   height: 20px;
+  border-radius: 10px;
+}
+#progressbar2 {
+  background-color: gold;
+  border-radius: 13px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar2 > div {
+   background-color: black;
+   width: 100%; /* Adjust with JavaScript */
+   height: 20px;
+  border-radius: 10px;
+}
+ 
