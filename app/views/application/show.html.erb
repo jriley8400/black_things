@@ -6,14 +6,14 @@
       </div>
     </div>
   </div>   
-  <h2><center> <%= @name %> </center></h2>
+  <h2><center> <%=  @name %> </center></h2>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <img height="410px" src="  <%= @url %>" alt="pew pew">
+          <img height="410px" src="  <%= @image.url %>" alt="pew pew">
           <p>
             <strong> Bio: </strong>
-           <%= @caption %>
+            <%= @image.caption %>
           </p>
         </div>
           <p>
@@ -30,5 +30,4 @@
   </div>
      
    </div>
-</div>
 </div>
