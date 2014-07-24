@@ -1,0 +1,7 @@
+<h2> <center>Edit Image</center> </h2>
+<br><br><br>
+<form action="/update_img/<%= @img.id %>">
+  <input type="text" name="caption" placeholder="caption" value="<%= @img.caption %>">
+  <input type="text" name="url" placeholder="url" value="<%= @img.url %>">
+  <input type="submit">
+</form>

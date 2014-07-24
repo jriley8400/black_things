@@ -18,4 +18,15 @@ class ApplicationController < ActionController::Base
     g.save
     redirect_to "/img/#{ g.id }"
   end
+  def edit
+    @img = Image.find_by_id(params['id'])
+  end
+  def update
+    g = Image.find_by_id(params['id'])
+    g.caption = params['caption']
+    g.url = params['url']
+    g.save
+    redirect_to "/img/#{ g.id }"
+  end
+  
 end

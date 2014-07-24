@@ -7,29 +7,24 @@
     </div>
   </div>   
   <h2><center> <%=  @name %> </center></h2>
-    <div class="container">
+    <div class="container bio">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-12">
           <img height="410px" src="  <%= @image.url %>" alt="pew pew">
           <p>
             <strong> Bio: </strong>
-            <%= @image.caption %>
-          </p>
-        </div>
+              </p>
+          <div class="caption"><%= @image.caption %></div>
+        </div>   
+         <a href="/img/<%= @image.id %>/edit">edit</a>
           <p>
             <strong> Location: </strong> Unknown
           </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      
-  <div></div>
-</div>
+        <br><br><br><br><br>
   </div>
-  <div id="progressbar">
+      <div id="progressbar"></div>
     <br>
    </div>
   <br><br><br>
+    
 </div>
