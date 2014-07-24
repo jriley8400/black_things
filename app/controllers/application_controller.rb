@@ -7,4 +7,15 @@ class ApplicationController < ActionController::Base
     @image = Image.find_by_id(params['id'])
     render 'show'
   end
+  
+  def new
+  end
+  
+  def create
+    g = Image.new
+    g.caption = params['caption']
+    g.url = params['url']
+    g.save
+    redirect_to "/img/#{ g.id }"
+  end
 end
