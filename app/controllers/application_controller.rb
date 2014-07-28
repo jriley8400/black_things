@@ -8,9 +8,6 @@ class ApplicationController < ActionController::Base
     render 'show'
   end
   
-  def new
-  end
-  
   def create
     g = Image.new
     g.caption = params['caption']
@@ -28,5 +25,9 @@ class ApplicationController < ActionController::Base
     g.save
     redirect_to "/img/#{ g.id }"
   end
-  
+   
+  def destroy
+    g = Image.find_by_id(params['id'])
+    g.destroy
+  end
 end
