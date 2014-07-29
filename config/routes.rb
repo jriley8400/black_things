@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get '/img/:id' => 'application#show'
-  get '/new_img' => 'application#new'
-  get '/create_img' => 'application#create'
-  get '/img/:id/edit' => 'application#edit'
-  get '/update_img/:id' => 'application#update'
-  get '/img/:id/destroy' => 'application#destroy'
-  root :to => "application#new"
+  get '/img/:id' => 'images#show'
+  get '/new_img' => 'images#new'
+  get '/create_img' => 'images#create'
+  get '/img/:id/edit' => 'images#edit'
+  get '/update_img/:id' => 'images#update'
+  get '/img/:id/destroy' => 'images#destroy'
+ 
 end

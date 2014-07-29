@@ -3,31 +3,5 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   
-  def show
-    @image = Image.find_by_id(params['id'])
-    render 'show'
-  end
   
-  def create
-    g = Image.new
-    g.caption = params['caption']
-    g.url = params['url']
-    g.save
-    redirect_to "/img/#{ g.id }"
-  end
-  def edit
-    @img = Image.find_by_id(params['id'])
-  end
-  def update
-    g = Image.find_by_id(params['id'])
-    g.caption = params['caption']
-    g.url = params['url']
-    g.save
-    redirect_to "/img/#{ g.id }"
-  end
-   
-  def destroy
-    g = Image.find_by_id(params['id'])
-    g.destroy
-  end
 end
