@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get '/img/:id/edit' => 'application#edit'
   get '/update_img/:id' => 'application#update'
   get '/img/:id/destroy' => 'application#destroy'
-
+  root :to => "application#new"
 end
